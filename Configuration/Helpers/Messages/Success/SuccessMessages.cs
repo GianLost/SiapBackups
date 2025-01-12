@@ -2,7 +2,7 @@
 
 namespace SiapBackups.Configuration.Helpers.Messages.Success;
 
-public class SuccessMessages
+public readonly struct SuccessMessages
 {
     public const string DIRECTORY_VERIFIED_SUCCESSFULLY = "✓ Diretório verificado com sucesso!\n";
     public const string MAIL_NOTIFICATION_SUCCESS = "✓ E-mail de notificação enviado com sucesso! \n";

@@ -3,7 +3,7 @@ using SiapBackups.Configuration.Helpers.Paths;
 
 namespace SiapBackups.Configuration.Helpers.Messages.Error;
 
-public static class ErrorMessages
+public readonly struct ErrorMessages
 {
     public const string FDB_NOT_FOUND = "✖ Erro: Nenhum arquivo .FDB foi enconrado dentro do diretório fornecido!\n";
     public const string EMPTY_DIRECTORY = "✖ Erro: O diretório informado está vazio!";

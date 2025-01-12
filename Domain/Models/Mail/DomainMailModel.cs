@@ -1,6 +1,6 @@
 ﻿namespace SiapBackups.Domain.Models.Mail;
 
-public static class DomainMailModel
+public readonly struct DomainMailModel
 {
     public static readonly string FirstSenderPassword = "qtfd xnjg eddi iyej";
 

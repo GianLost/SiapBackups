@@ -2,7 +2,7 @@
 
 namespace SiapBackups.Configuration.Helpers.Messages.Tasks;
 
-public class TaskMessages
+public readonly struct TaskMessages
 {
     public const string START = "⏳ Iniciando Backup da base de dados...\n";
     public const string INITIAL_CHECK = "⏳ Verificando diretório inicial...\n";

@@ -3,7 +3,7 @@ using SiapBackups.Configuration.Directories;
 
 namespace SiapBackups.Configuration.Helpers.Paths;
 
-public static class ConstPaths
+public readonly struct ConstPaths
 {
     public const string FILE_TYPE = "*.FDB";
     public const string DATE_TIME_FORMAT = "dd-MM-yyyy HH\\H mm\\m ss\\s";

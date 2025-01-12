@@ -1,6 +1,6 @@
 ﻿namespace SiapBackups.Configuration.DateTime;
 
-public static class DateAndBaseHour
+public readonly struct DateAndBaseHour
 {
     public static readonly TimeZoneInfo BrazilTimeZone = TimeZoneInfo.FindSystemTimeZoneById("E. South America Standard Time");
 
