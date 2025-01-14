@@ -12,9 +12,9 @@ public readonly struct ConstPaths
 
     public static readonly string FOLDER_NAME = $"BKP_SIAP {DateAndBaseHour.CurrentDateTime.ToString(DATE_TIME_FORMAT)}";
 
-    public static readonly string FOLDER_PATH = Path.Combine(BaseDirectory.Finaldirectory, FOLDER_NAME);
+    public static readonly string FOLDER_PATH = Path.Combine(BaseDirectory.FinalDirectory, FOLDER_NAME);
 
-    public static readonly string ZIP_NAME = $"{FOLDER_NAME} {Guid.NewGuid()}.zip";
+    public static readonly string ZIP_NAME = $"{FOLDER_NAME}.zip";
 
-    public static readonly string ZIP_PATH = Path.Combine(FOLDER_PATH, ZIP_NAME);
+    public static readonly string ZIP_PATH = Path.Combine(BaseDirectory.FinalDirectory, ZIP_NAME);
 }

@@ -1,10 +1,14 @@
 ﻿namespace SiapBackups.Domain.Models.Mail;
 
-public readonly struct EmailModel
+public struct EmailModel
 {
-    public static readonly string SenderEmail = "gianluca19993m@gmail.com";
+    public EmailModel() { }
 
-    public static readonly string FirstRecipientEmail = "gianluca19993m@gmail.com";
+    public string SenderEmail { get; set; } = default!;
+    public string SenderPassword { get; set; } = default!;
+    public string RecipientEmail { get; set; } = default!;
+    public string Subject { get; set; } = default!;
+    public string Body { get; set; } = default!;
 
-    //public static readonly string SecondRecipientEmail = "informatica@tresmarias.mg.gov.br";
+    public bool IsHtml = false;
 }
